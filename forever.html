@@ -71,29 +71,6 @@
 
 
 
-    <audio id="musica" loop>
-        <source src="cancion.m4a" type="audio/mp4">
-        Your browser cannot play this audio.
-    </audio>
-
-    <script>
-        const musicBtn = document.getElementById("musicBtn");
-        const audio = document.getElementById("musica");
-
-        function toggleMusic() {
-            if (audio.paused) {
-                audio.play()
-                    .then(() => {
-                        musicBtn.innerHTML = "🎵 Pause Music";
-                    })
-                    .catch(() => {
-                        alert("Could not play the music. Make sure the file cancion.m4a is in the same folder.");
-                    });
-            } else {
-                audio.pause();
-                musicBtn.innerHTML = "🎵 Play Music";
-            }
-        }
-    </script>
+    
 </body>
 </html>
